@@ -2,8 +2,8 @@ name: Terraform Bootstrap
 
 on:
   push:
-    paths:
-      - 'work_in_progress/backend-bootstrap-tf/*'
+    branches: [ main ]
+    
 
 env:
   AWS_REGION: us-east-1
