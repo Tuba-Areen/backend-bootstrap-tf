@@ -1,3 +1,5 @@
+data "aws_caller_identity" "current" {}
+
 resource "aws_s3_bucket" "tf_state" {
   bucket = "terraform-state-${var.project}-${var.environment}-${data.aws_caller_identity.current.account_id}"
 
